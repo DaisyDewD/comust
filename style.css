@@ -141,8 +141,8 @@ a:hover {
 /* - Section Padding
 --------------------------------------------------------------*/
 .padding-small {
-  padding-top: 8.125em;
-  padding-bottom: 8.125em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .padding-medium {
@@ -520,7 +520,11 @@ a.hover-color h4:hover {
   color: var(--accent-color);
 }
 
-
+.service-box {
+  min-height: 300px;
+  max-height: 300px; /* Establecer un tamaño máximo para los recuadros */
+  overflow: hidden; /* Ocultar el contenido que pueda exceder el tamaño máximo */
+}
 /* 
  4.4 About style
 --------------------------------------------------------------*/

@@ -521,9 +521,15 @@ a.hover-color h4:hover {
 }
 
 .service-box {
-  min-height: 300px;
+  min-height: 320px;
   max-height: 300px; /* Establecer un tamaño máximo para los recuadros */
   overflow: hidden; /* Ocultar el contenido que pueda exceder el tamaño máximo */
+}
+
+@media (max-width: 1300px) {
+  .service-box {
+    max-height: none; /* Eliminar la altura máxima en dispositivos móviles */
+  }
 }
 /* 
  4.4 About style

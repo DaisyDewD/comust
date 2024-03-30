@@ -41,7 +41,7 @@ function iniciarTiempo() {
         tiempoIniciado = true;
         setTimeout(() => {
             terminarJuego();
-        }, 10000);
+        }, 30000);
     }
 }
 

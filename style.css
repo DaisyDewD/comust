@@ -62,22 +62,23 @@ CSS STRUCTURE:
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 :root {
-  --accent-color: #DF97A2;
-  --secondary-color: #F9E4E3;
+  --accent-color: #99c5c9;
+  --secondary-color: #ea7d85;
   --black-color: #3C3C3C;
   --light-black-color: #343536;
-  --dark-color: #797876;
-  --primary-color: #DF97A2;
+  --dark-color: #777976;
+  --primary-color: #ea7d85;
   --primary-color-200: #E8F0F1;
   --primary-color-400: #c4e9ed;
   --gray-color: #777F81;
   --light-color: #FFFFFF;
+  --green-color: #2ECC71;
 
   --bs-dark-rgb: 87, 87, 87;
   --bs-gray-100: #EEEFEF;
   --bs-gray-300: #DCDCDC;
   --bs-primary-text-emphasis: var(--primary-color);
-  --bs-primary: #DF97A2;
+  --bs-primary: ##ea7d85;
   --bs-light-rgb: 255, 255, 255;
   --bs-primary-rgb: 223, 151, 162;
   --bs-secondary-rgb: 249, 228, 227;
@@ -183,7 +184,6 @@ h5,
 h6 {
   color: var(--black-color);
   font-family: var(--heading-font);
-  text-transform: capitalize;
   font-weight: 500;
   letter-spacing: 0.0675rem;
 }
@@ -216,19 +216,19 @@ h6 {
 /* Primary Buttons */
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: var(--accent-color);
-  --bs-btn-border-color: var(--accent-color);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #df808f;
-  --bs-btn-hover-border-color: #df808f;
+  --bs-btn-hover-bg: var(--accent-color);
+  --bs-btn-hover-border-color: var(--accent-color);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #df808f;
-  --bs-btn-active-border-color: #df808f;
+  --bs-btn-active-bg: var(--accent-color);
+  --bs-btn-active-border-color: var(--accent-color);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #df808f;
-  --bs-btn-disabled-border-color: #df808f;
+  --bs-btn-disabled-bg: var(--accent-color);
+  --bs-btn-disabled-border-color: var(--accent-color);
 }
 
 .btn-outline-primary {
@@ -364,6 +364,13 @@ svg.primary-color-500 {
   background: var(--accent-color);
   opacity: 1;
 }
+@media (max-width: 768px) { 
+  .swiper-wrapper {
+    height: 60vh; width: 50vh;
+    background-position: center;
+   
+  }
+}
 
 /* -Zoom Effect
 ------------------------------------------*/
@@ -443,7 +450,6 @@ svg.primary-color-500 {
 
 a.nav-link {
   font-family: var(--heading-font);
-  text-transform: capitalize;
   color: var(--black-color);
   font-size: 20px;
 }
@@ -475,13 +481,29 @@ a.nav-link:hover {
   min-height: -webkit-fill-available;
   border-radius: 0.25rem;
 }
+#header.sticky-top {
+  background-color: #cfcb4d; /* Cambia el color de fondo cuando se hace sticky */
+  box-shadow: 0 2px 4px rgba(19, 76, 8, 0.1); /* Agrega sombra */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
 
+/* Ajustes específicos para el menú superior */
+#header.sticky-top .header-top {
+  padding: 10px 0; /* Espaciado interno */
+}
+
+/* Ajustes específicos para el menú principal */
+#header.sticky-top #primary-header {
+  padding-top: 10px; /* Espaciado superior */
+  padding-bottom: 10px; /* Espaciado inferior */
+}
 
 
 /* 4.2 Slider Section
 /*----------------------------------------------*/
 section#slider .banner-content {
-  width: 50%;
+  width: 80%;
+  color: var(--accent-color);
 }
 
 section#slider .main-slider-button-next,
@@ -496,18 +518,19 @@ section#slider .main-slider-button-next.swiper-button-disabled,
   opacity: 0.6;
 }
 
-.banner-title {
-  color: #FFF;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.27);
+.banner-content h2{
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(22, 99, 118, 0.27);
 }
-
 @media only screen and (max-width: 999px) {
   section#slider .banner-content {
     width: 66%;
   }
 }
 
-
+section#categories h2, h4 {
+  color: #fff;
+}
 
 /* 4.3 Services Section
 /*----------------------------------------------*/
@@ -525,7 +548,9 @@ a.hover-color h4:hover {
   max-height: 300px; /* Establecer un tamaño máximo para los recuadros */
   overflow: hidden; /* Ocultar el contenido que pueda exceder el tamaño máximo */
 }
-
+.service-icon {
+  color: var(--primary-color); /* Ocultar el contenido que pueda exceder el tamaño máximo */
+}
 @media (max-width: 1300px) {
   .service-box {
     max-height: none; /* Eliminar la altura máxima en dispositivos móviles */
@@ -730,7 +755,7 @@ iconify-icon.quote {
 
 
 /*--------------------------------------------------------------
-5.5 Single Product page style
+5.5 Game
 --------------------------------------------------------------*/
 
 .nav-tabs .nav-link {
@@ -792,4 +817,44 @@ iconify-icon.quote {
   .product-box {
     width: 50%;
   }
+}
+
+/*--------------------------------------------------------------
+5.5 Single Product page style
+--------------------------------------------------------------*/
+
+
+
+.game {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #52a9dc;
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  line-height: 60px;
+  border-radius: 5px;
+}
+
+.card.flipped {
+  background-color: #dc6969;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

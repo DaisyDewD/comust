@@ -132,8 +132,9 @@
       <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
     </symbol>
   </svg>
+  <script src="js/play.js"></script>
 
-  <header id="header">
+  <header id="header" class="sticky-top">
     <nav class="header-top bg-secondary py-1">
       <div class="container-lg">
         <div class="d-flex flex-wrap justify-content-between align-items-center">
@@ -146,7 +147,7 @@
             <li class="phone fs-6 text-capitalize text-black d-flex align-items-center me-4">
               <svg class="me-2" width="18" height="18">
                 <use xlink:href="#phone"></use>
-              </svg> +(601) 765 5727 
+              </svg> +(601) 765 5727
             </li>
 
           </ul>
@@ -204,72 +205,26 @@
               </li>
 
               <li class="nav-item px-3 py-2 py-lg-0">
-                <a class="nav-link fw-semibold p-0" aria-current="page" href="#categories">Edición 2024</a>
+                <a class="nav-link fw-semibold p-0" aria-current="page" href="#categories">IV Edición</a>
               </li>
 
-              </li>
-              <li class="nav-item px-3 py-2 py-lg-0 dropdown">
-                <a class="nav-link fw-semibold p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Shop</a>
-                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                  <li><a href="shop.html" class="dropdown-item">Shop <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="single-product.html" class="dropdown-item">Single-Product <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="cart.html" class="dropdown-item">Cart <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="wishlist.html" class="dropdown-item">Wishlist <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="checkout.html" class="dropdown-item">Checkout <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item px-3 py-2 py-lg-0 dropdown">
-                <a class="nav-link fw-semibold p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Services</a>
-                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                  <li><a href="services.html" class="dropdown-item">Services <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="services-single.html" class="dropdown-item">Service-Details <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item px-3 py-2 py-lg-0 dropdown">
-                <a class="nav-link fw-semibold p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">Blog</a>
-                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                  <li><a href="blog.html" class="dropdown-item">Blog <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                  <li><a href="single-post.html" class="dropdown-item">Single-Post <span
-                        class="badge bg-secondary text-black">Pro</span></a></li>
-                </ul>
-              </li>
               <li class="nav-item px-3 py-2 py-lg-0">
-                <a class="nav-link fw-semibold p-0" href="contact.html">Contact</a>
+                <a class="nav-link fw-semibold p-0" aria-current="page" href="#revive">Revive</a>
               </li>
+
               <li class="nav-item px-3 py-2 py-lg-0">
-                <a class="nav-link p-0 fw-bold text-uppercase"
-                  href="https://templatesjungle.gumroad.com/l/beauty-and-nail-salon-website-template"
-                  target="_blank">Get Pro</a>
+                <a class="nav-link fw-semibold p-0" aria-current="page" href="#testimonial">Testimonios</a>
               </li>
-              <li class="nav-item search-dropdown py-2 py-lg-0 ms-3 ms-lg-5 dropdown">
-                <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                  aria-expanded="false">
-                  <svg class="search text-primary " width="24" height="24">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
-                  <li class="position-relative d-flex align-items-center p-0">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary position-absolute end-0" type="submit">
-                      <svg class="search" width="24" height="24">
-                        <use xlink:href="#search"></use>
-                      </svg>
-                    </button>
-                  </li>
-                </ul>
+
+              <li class="nav-item px-3 py-2 py-lg-0">
+                <a class="nav-link fw-semibold p-0" aria-current="page" href="#game">Juega y gana</a>
               </li>
+
+              <li class="nav-item px-3 py-2 py-lg-0">
+                <a class="nav-link fw-bold p-0" aria-current="page" href="#form">INSCRÍBETE</a>
+              </li>
+              
+              
             </ul>
           </div>
         </div>
@@ -278,32 +233,32 @@
   </header>
 
   <section id="slider">
-    <div class="swiper slider ">
+    <div class="swiper slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex jarallax position-relative"
-          style="background-image: url(images/banner-img1.png); background-size: cover; background-repeat: no-repeat; height: 90vh; background-position: center; height: 90vh;">
-          <div class="banner-content d-flex flex-column justify-content-between align-items-end mb-6 m-auto" data-aos="zoom-effect" style="margin-right: 0;">
-            <h2 class="display-4 fw-bold text-white align-items-end text-right" style="word-wrap: break-word;">¡Incorpórate en<br>nuestro corazón!</h2>
+        <div class="swiper-slide d-flex flex-row-reverse jarallax position-relative"
+          style="background-image: url(images/banner-img1.png); background-size: cover; background-repeat: no-repeat; background-position: center; height: 90vh;">
+          <div class="banner-content d-flex flex-column justify-content-between align-items-end mb-6 m-auto"
+            data-aos="zoom-effect" style="margin-right: 0;">
+            <h2 class="display-4 fw-bold align-items-end text-right text-end" style="word-wrap: break-word;">
+              ¡Incorpórate en<br>nuestro corazón!</h2>
             <a href="appointment.html" class="btn btn-primary mt-3">Inscribirme</a>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
+    </div>
   </section>
-  
+
   <section id="event">
     <div class="container-lg padding-small">
       <div class="row flex-row-reverse align-items-center g-md-5">
         <div class="col-md-6">
-          <div class="video my-5">
-            <div class="video-content position-relative open-up">
+          <div class="my-5">
+            <div class="position-relative open-up">
               <div class="video-bg ">
-                <img src="images/about-img.jpg" alt="video" class="video-image img-fluid">
-              </div>
-              <div class="video-player position-absolute">
-                <a class="youtube cboxElement" href="https://www.youtube.com/embed/_N-AaFDRZEk?si=845r7qrkaduPsorX">
-                  <iconify-icon icon="ion:play-sharp" class="video-icon p-4"></iconify-icon>
-                </a>
+                <img src="images/about-img.png" alt="sobre-evento">
               </div>
             </div>
           </div>
@@ -311,13 +266,15 @@
 
         <div class="col-md-6 mt-2 mt-md-0">
           <div class="section-title">
-            <h2 class="display-4 fw-normal text-capitalize">Evento CO-MUST 2024: ¡Excelencia en la Estética Facial!</h2>
+            <h2 class="display-4 fw-normal text-capitalize">Evento CO-MUST 2024: Encuentro sensorial</h2>
           </div>
-          <p>¡Te invitamos a unirte a nosotros en un evento único que celebra la convergencia entre el arte, la bioingeniería facial y la belleza! CO-MUST 2024 es más que un evento; es una experiencia inmersiva diseñada para cautivar tus sentidos y elevar tu comprensión de la belleza moderna.</p>
-          <ul>
-            <li>Fecha: 27 de abril de 2024</li>
-            <li>Hora: 9:00am</li>
-            <li>Lugar: Ágora Bogotá Centro de Convenciones • Calle 24 No 38-71</li>
+          <p>¡Te invitamos a unirte a nosotros en un evento único que celebra la convergencia entre el arte, la
+            bioingeniería facial y la belleza! CO-MUST 2024 es más que un evento; es una experiencia inmersiva diseñada
+            para cautivar tus sentidos y elevar tu comprensión de la belleza moderna.</p>
+          <ul style="color: var(--primary-color);">
+            <li><strong>Fecha:</strong> 27 de abril de 2024</li>
+            <li><strong>Hora:</strong> 9:00am</li>
+            <li><strong>Lugar:</strong> Ágora Bogotá Centro de Convenciones • Calle 24 No 38-71</li>
           </ul>
           <a class="btn btn-primary mt-3" href="about.html">Inscribirme</a>
         </div>
@@ -327,84 +284,198 @@
   </section>
 
   <section id="categories" class="jarallax"
-    style="background-image: url(images/background-1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    style="background-image: url(images/background-1.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
 
     <div class="container-lg pb-5">
-        <div class="row g-md-5 align-items-stretch">
-            <div class="section-title col-12 mb-3">
-                <h2 class="display-4 fw-normal text-center mb-3 text-capitalize">¿Qué te espera en el Evento
-                    CO-MUST?</h2>
-            </div>
-            <div class="col-md-4 my-3">
-                <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-                    <iconify-icon class="service-icon text-primary display-3"
-                        icon="material-symbols-light:history-edu"></iconify-icon>
-                    <h3 class="py-2 ">Cánones de belleza modernos</h3>
-                    <p class="blog-paragraph">Sumérgete en un viaje fascinante a través de los estándares de belleza.
-                        Desde la belleza griega clásica hasta los estándares modernos. Aprende cómo nuestros productos
-                        pueden ayudarte a realzar los rasgos naturales.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 my-3">
-              <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-                <iconify-icon class="service-icon text-primary display-3" icon="ei:star"></iconify-icon>
-                <h3 class="py-2 ">Talleres de belleza facial</h3>
-                <p class="blog-paragraph">Aprende técnicas innovadoras de belleza facial de la mano de nuestros expertos. Descubre la aplicación correcta de nuestros hilos tensores para un moldeamiento facial natural y rejuvenecedor.</p>
-              </div>
+      <div class="row g-md-5 align-items-stretch">
+        <div class="section-title col-12 mb-3">
+          <h2 class="display-4 fw-normal text-center mb-3">¿Qué te espera en el evento
+            CO-MUST?</h2>
+        </div>
+        <div class="col-md-4 my-3">
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3" icon="material-symbols-light:history-edu"></iconify-icon>
+            <h3 class="py-2 ">Cánones de belleza modernos</h3>
+            <p class="blog-paragraph">Sumérgete en un viaje fascinante a través de los estándares de belleza.
+              Desde la belleza griega clásica hasta los estándares modernos. Aprende cómo nuestros productos
+              pueden ayudarte a realzar los rasgos naturales.</p>
           </div>
-
-          <div class="col-md-4 my-3">
-            <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-              <iconify-icon class="service-icon text-primary display-3"
-              icon="material-symbols-light:interactive-space-outline"></iconify-icon>
-            <h3 class="py-2 ">Zona de Experiencia Interactiva</h3>
-            <p class="blog-paragraph">Experimenta la aplicación de hilos tensores en rostros de silicona. ¡Practica y perfecciona tus habilidades para lograr resultados sorprendentes!</p>
-            </div>
         </div>
 
         <div class="col-md-4 my-3">
-          <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-            <iconify-icon class="service-icon text-primary display-3" icon="ph:magnifying-glass-plus-light"></iconify-icon>
-            <h3 class="py-2 ">La magia del detalle</h3>
-            <p class="blog-paragraph">Observa nuestros diferentes hilos tensores con detalle, ¡aumentando el conocimiento sobre sus características y beneficios!</p>
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3" icon="ei:star"></iconify-icon>
+            <h3 class="py-2 ">Talleres de belleza facial</h3>
+            <p class="blog-paragraph">Aprende técnicas innovadoras de belleza facial de la mano de nuestros expertos.
+              Descubre la aplicación correcta de nuestros hilos tensores para un moldeamiento facial natural y
+              rejuvenecedor.</p>
           </div>
-      </div>
-
-      <div class="col-md-4 my-3">
-        <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-          <iconify-icon class="service-icon text-primary display-3" icon="circum:shopping-cart"></iconify-icon>
-          <h3 class="py-2 ">Presentación de Productos Exclusivos</h3>
-          <p class="blog-paragraph">Descubre nuestras últimas innovaciones en hilos tensores y productos de belleza facial. ¡Sorpréndete con las soluciones más avanzadas para el cuidado de la piel!</p>
         </div>
+
+        <div class="col-md-4 my-3">
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3"
+              icon="material-symbols-light:interactive-space-outline"></iconify-icon>
+            <h3 class="py-2 ">Zona de Experiencia Interactiva</h3>
+            <p class="blog-paragraph">Experimenta la aplicación de hilos tensores en rostros de silicona. ¡Practica y
+              perfecciona tus habilidades para lograr resultados sorprendentes!</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3" icon="ph:magnifying-glass-plus-light"></iconify-icon>
+            <h3 class="py-2 ">La magia del detalle</h3>
+            <p class="blog-paragraph">Observa nuestros diferentes hilos tensores con detalle, ¡aumentando el
+              conocimiento sobre sus características y beneficios!</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3" icon="circum:shopping-cart"></iconify-icon>
+            <h3 class="py-2 ">Presentación de Productos Exclusivos</h3>
+            <p class="blog-paragraph">Descubre nuestras últimas innovaciones en hilos tensores y productos de belleza
+              facial. ¡Sorpréndete con las soluciones más avanzadas para el cuidado de la piel!</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-3">
+          <div
+            class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between align-items-center">
+            <iconify-icon class="service-icon display-3" icon="healthicons:heart-outline"></iconify-icon>
+            <h3 class="py-2 ">Testimonios Inspiradores</h3>
+            <p class="blog-paragraph">Escucha las historias de transformación de nuestros clientes satisfechos.
+              ¡Inspírate con experiencias reales de belleza y confianza!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <h4 class="display-6 fw-normal text-center mb-1 mt-5">Regístrate ahora y sé parte de esta experiencia
+          única</h4>
+        <div class="text-center">
+          <a class="btn btn-primary mt-5" href="blog.html">Incribirme</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="col-md-4 my-3">
-      <div class="text-center bg-white p-4 service-box d-flex flex-column justify-content-between">
-        <iconify-icon class="service-icon text-primary display-3" icon="healthicons:heart-outline"></iconify-icon>
-        <h3 class="py-2 ">Testimonios Inspiradores</h3>
-        <p class="blog-paragraph">Escucha las historias de transformación de nuestros clientes satisfechos. ¡Inspírate con experiencias reales de belleza y confianza!</p>
-      </div>
-  </div>
-        </div>
-        <div class="container-lg">
-            <h4 class="display-6 fw-normal text-center mb-1 mt-5">Regístrate ahora y sé parte de esta experiencia
-                única</h4>
-            <div class="text-center">
-                <a class="btn btn-primary mt-5" href="blog.html">Incribirme</a>
+  <section id="revive">
+    <div class="container-lg padding-small">
+      <div class="row flex-row align-items-center g-md-5">
+        <div class="col-md-6">
+          <div class="video my-5">
+            <div class="video-content position-relative open-up">
+              <div class="video-bg ">
+                <img src="images/about-img2.png" alt="video" class="video-image img-fluid">
+              </div>
+              <div class="video-player position-absolute">
+                <a class="youtube cboxElement" href="videos/Download.mp4">
+                  <iconify-icon icon="ion:play-sharp" class="video-icon p-4"></iconify-icon>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="col-md-6 mt-2 mt-md-0">
+          <div class="section-title">
+            <h2 class="display-4 fw-normal text-capitalize">Recapitulación de la Edición Pasada: Learning now</h2>
+          </div>
+          <p>Revive la emoción y el conocimiento compartido en nuestra exitosa edición anterior del evento CO-MUST. En
+            nuestra jornada de aprendizaje, nuestros distinguidos expertos, líderes en el campo de la estética facial,
+            ofrecieron una experiencia inolvidable llena de descubrimientos y técnicas innovadoras.<br><br>Desde la
+            exploración de los vectores de fijación para lograr un efecto de larga duración, hasta el abordaje médico
+            con hilos PDO en pacientes no candidatos para braquioplastia, cada sesión estuvo cuidadosamente diseñada
+            para proporcionar información valiosa y práctica para nuestros esteticistas faciales.</p>
+          <a class="btn btn-primary mt-3" href="about.html">Inscribirme</a>
+        </div>
+
+      </div>
     </div>
+  </section>
 
+  <section id="testimonial" class="jarallax"
+    style="background-image: url(images/testimonial-bg.png); background-repeat: no-repeat; background-position: center;">
+    <div class="container-lg padding-medium">
+
+      <div class="offset-md-2 col-md-8 ">
+        <div class="swiper testimonial-swiper py-3 py-md-5 bg-white   shadow-sm">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review px-md-5">
+                <div class="review-content px-5 d-lg-flex align-items-center ">
+                  <img src="images/reviewer3.png" alt="reviewer" class="img-fluid rounded-circle">
+                  <div class="ms-md-4 mt-3 mt-lg-0">
+                    <p>“Decidí probar los hilos tensores después de años de lidiar con la flacidez en mi rostro. ¡Fue
+                      una decisión que cambió mi vida! Después del tratamiento, noté una mejora significativa en la
+                      firmeza y la apariencia de mi piel. Ahora me siento más segura y rejuvenecida. ¡Gracias HansBiomed
+                      por presentarme esta técnica innovadora!”</p>
+                    <h2 class="name m-0 lh-sm">Silvia</h3>
+                      <p class="m-0">Caso de éxito</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review px-md-5">
+                <div class="review-content px-5 d-lg-flex align-items-center ">
+                  <img src="images/reviewer2.png" alt="reviewer" class="img-fluid rounded-circle">
+                  <div class="ms-md-4 mt-3 mt-lg-0">
+                    <p>“Siempre he sido bastante escéptico sobre los tratamientos estéticos, pero después de investigar
+                      y escuchar sobre los hilos tensores en el evento CO-MUST del año pasado, decidí probarlos. ¡Y qué
+                      diferencia! Tengo el perfil que deseaba, y lo mejor de todo es que los resultados son naturales y
+                      duraderos. Recomiendo totalmente esta técnica a cualquier persona que busque un cambio facial sin
+                      cirugía”</p>
+                    <h2 class="name m-0 lh-sm">Felipe</h3>
+                      <p class="m-0">Asistente en la 2ª edición</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review px-md-5">
+                <div class="review-content px-5 d-lg-flex align-items-center ">
+                  <img src="images/reviewer1.png" alt="reviewer" class="img-fluid rounded-circle">
+                  <div class="ms-md-4 mt-3 mt-lg-0">
+                    <p>“Como profesional de la estética facial, siempre estoy en busca de tratamientos efectivos para
+                      mis clientes. Después de asistir a un evento de HansBiomed y aprender más sobre los hilos
+                      tensores, decidí incorporarlos a mi práctica. Los resultados han sido asombrosos. Mis clientes
+                      están encantados con los efectos de lifting natural que ofrecen estos hilos. ¡No puedo esperar
+                      para seguir explorando más en futuros eventos!”</p>
+                    <h2 class="name m-0 lh-sm">Carla</h3>
+                      <p class="m-0">Esteticista facial</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination position-relative pt-4 pt-md-5"></div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section id="game" class="game">
+    <h2>Encuentra los pares</h2>
+    <div id="game-container"></div>
+    <div id="codigoDescuento"></div>
+    <a href="javascript:void(0)" onclick="reiniciarJuego()">Reiniciar Juego</a>
 </section>
+<script src="/js/play.js"></script>
 
- 
-
-  <section id="services" class="jarallax"
+  <section id="player" class="jarallax"
     style="background-image: url(images/background-1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
     <div class="container-lg padding-medium">
       <div class="section-title text-center mb-5">
-        <h2 class="display-4 fw-normal">Services we Offer</h2>
+        <h2 class="display-4 fw-normal">juega y obten descuentos</h2>
       </div>
 
       <div class="row g-lg-5 my-0">
@@ -515,7 +586,7 @@
     </div>
   </section>
 
-  
+
 
   <section id="team">
     <div class="container-lg ">
@@ -991,146 +1062,6 @@
     </div>
   </section>
 
-  <section id="price" class="jarallax"
-    style="background-image: url(images/background-2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-    <div class="container-lg padding-medium">
-      <div class="section-title text-center mb-5">
-        <h2 class="display-4 fw-normal">Price Packages</h2>
-      </div>
-
-      <div class="row g-md-5 my-0">
-        <div class="col-md-6 my-4">
-          <div class="bg-white p-2 p-lg-5">
-            <div class="list-group rounded-0">
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img3.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Gel Nail Extensions</h3>
-                      <h4 class="fw-semibold">$130.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img2.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Manicure</h3>
-                      <h4 class="fw-semibold">$100.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img1.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Eyelashes Extensions</h3>
-                      <h4 class="fw-semibold">$120.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img4.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Pedicure</h3>
-                      <h4 class="fw-semibold">$180.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 my-4">
-          <div class="bg-white p-2 p-md-5">
-            <div class="list-group rounded-0">
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img5.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Facial Treatment</h3>
-                      <h4 class="fw-semibold">$120.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img7.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Paraffin For Nail Hands</h3>
-                      <h4 class="fw-semibold">$130.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img6.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Nail Art</h3>
-                      <h4 class="fw-semibold">$100.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-              <a href="#"
-                class="border-0 list-group-item list-group-item-action d-lg-flex align-items-center gap-4 py-3"
-                aria-current="true">
-                <img src="images/service-img8.jpg" alt="twbs" width="100" height="100"
-                  class="rounded-circle flex-shrink-0 mb-4">
-                <div>
-                  <div class="d-flex gap-4 w-100 justify-content-between">
-                    <h4 class="fw-semibold">Nail Polishing</h3>
-                      <h4 class="fw-semibold">$180.00</h4>
-                  </div>
-                  <p class="mb-0 opacity-75">Fugit eligendi non consectetur maxime accusantium possimus. Quia eos minus
-                    quo sed totam similique quas. Dolorum, nihil.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-    </div>
-  </section>
-
   <section id="gallery">
     <div class="container-lg padding-medium ">
       <h2 class="display-4 fw-normal text-center mb-5">View gallery</h2>
@@ -1169,130 +1100,7 @@
     </div>
   </section>
 
-  <section id="testimonial" class="jarallax"
-    style="background-image: url(images/testimonial-bg.jpg); background-repeat: no-repeat; background-position: center;">
-    <div class="container-lg padding-medium">
-
-      <div class="offset-md-2 col-md-8 ">
-        <div class="swiper testimonial-swiper py-3 py-md-5 bg-white   shadow-sm">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="review px-md-5">
-                <div class="review-content px-5 d-lg-flex align-items-center ">
-                  <img src="images/reviewer3.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                  <div class="ms-md-4 mt-3 mt-lg-0">
-                    <p>“Pretium turpis faucibus adipiscing duis. Id quis tristique mi vitae nec. In et in praesent
-                      pellentesque. Porta sit porta ridiculus faucibus. Curabitur lacus pretium pellentesque interdum
-                      urna blandit.”</p>
-                    <h2 class="name m-0 lh-sm">Jenny Will</h3>
-                      <p class="m-0">Hanay mom</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review px-md-5">
-                <div class="review-content px-5 d-lg-flex align-items-center ">
-                  <img src="images/reviewer1.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                  <div class="ms-md-4 mt-3 mt-lg-0">
-                    <p>“Pretium turpis faucibus adipiscing duis. Id quis tristique mi vitae nec. In et in praesent
-                      pellentesque. Porta sit porta ridiculus faucibus. Curabitur lacus pretium pellentesque interdum
-                      urna blandit.”</p>
-                    <h2 class="name m-0 lh-sm">Emily Smith</h3>
-                      <p class="m-0">Serene mom</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review px-md-5">
-                <div class="review-content px-5 d-lg-flex align-items-center ">
-                  <img src="images/reviewer2.jpg" alt="reviewer" class="img-fluid rounded-circle">
-                  <div class="ms-md-4 mt-3 mt-lg-0">
-                    <p>“Pretium turpis faucibus adipiscing duis. Id quis tristique mi vitae nec. In et in praesent
-                      pellentesque. Porta sit porta ridiculus faucibus. Curabitur lacus pretium pellentesque interdum
-                      urna blandit.”</p>
-                    <h2 class="name m-0 lh-sm">Noran Shara</h3>
-                      <p class="m-0">Sam mom</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination position-relative pt-4 pt-md-5"></div>
-        </div>
-      </div>
-
-    </div>
-    </div>
-  </section>
-
-  <section id="news">
-    <div class="container-lg padding-medium">
-      <h2 class="display-4 fw-normal text-center mb-5">Latest Blog Updates</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="card bg-white p-4 border-0 rounded-0 ">
-            <a href="single-post.html"><img src="images/blog-1.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">10 Feb, Sun</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">The Benefits of taking care of nails</h4>
-              </a>
-              <p class="m-0">Lorem, ipsum dolor sit amet consectetur elit. Sint rerum dignissimos enim harum. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="card bg-white p-4 border-0 rounded-0 ">
-            <a href="single-post.html"><img src="images/blog-3.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">15 Mar, Mon</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Creating beautiful and basic nail art at home</h4>
-              </a>
-              <p class="m-0">Lorem, ipsum dolor sit amet consectetur elit. Sint rerum dignissimos enim harum. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="card bg-white p-4 border-0 rounded-0 ">
-            <a href="single-post.html"><img src="images/blog-2.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">22 Feb, Fri</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Healty habits to follow by nail artists</h4>
-              </a>
-              <p class="m-0">Lorem, ipsum dolor sit amet consectetur elit. Sint rerum dignissimos enim harum. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-          <div class="card bg-white p-4 border-0 rounded-0 ">
-            <a href="single-post.html"><img src="images/blog-4.jpg" class="img-fluid" alt="image"></a>
-            <div class="card-body p-0">
-              <p class="m-0 pt-3">26 Apr, Tue</p>
-              <a href="single-post.html" class="hover-color">
-                <h4 class="my-2">Craft Ideas for simple nail art designs</h4>
-              </a>
-              <p class="m-0">Lorem, ipsum dolor sit amet consectetur elit. Sint rerum dignissimos enim harum. <span><a
-                    href="single-post.html" class="text-decoration-underline">Read more</a></span></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary mt-5" href="blog.html">Read All Blogs</a>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section id="appointment" class="jarallax"
+  <section id="form" class="jarallax"
     style="background-image: url(images/background-1.jpg); background-repeat: no-repeat; background-position: center;">
 
     <div class="container-lg padding-medium">

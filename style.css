@@ -822,27 +822,22 @@ iconify-icon.quote {
 /*--------------------------------------------------------------
 5.5 Single Product page style
 --------------------------------------------------------------*/
-
-
-
 .game {
   text-align: center;
 }
 
 .card {
   display: inline-block;
-  width: 60px;
-  height: 60px;
-  background-color: #52a9dc;
+  width: 100px; /* Ancho de la carta */
+  height: 100px; /* Alto de la carta */
+  background-color: #a73232;
   margin: 5px;
-  font-size: 30px;
   cursor: pointer;
-  line-height: 60px;
-  border-radius: 5px;
+  background-size: cover; /* Ajusta la imagen de fondo al tamaño del cuadro de la carta */
 }
 
 .card.flipped {
-  background-color: #dc6969;
+  background-color: #7ab91b;
 }
 
 button {

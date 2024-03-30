@@ -827,17 +827,42 @@ iconify-icon.quote {
 }
 
 .card {
-  display: inline-block;
-  width: 100px; /* Ancho de la carta */
-  height: 100px; /* Alto de la carta */
-  background-color: #a73232;
-  margin: 5px;
-  cursor: pointer;
-  background-size: cover; /* Ajusta la imagen de fondo al tamaño del cuadro de la carta */
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(8, auto); /* 8 columnas */
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+      width: 60px; /* Tamaño más pequeño para dispositivos móviles */
+      height: 60px;
+  }
+  
+  .game-container {
+      grid-template-columns: repeat(4, 1fr); /
+  }
 }
 
 .card.flipped {
   background-color: #7ab91b;
+}
+
+#codigo-descuento {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7ab91b;
+}
+.container-lg .section-title p {
+  margin-left:20%;
+  margin-right: 20%;
 }
 
 button {

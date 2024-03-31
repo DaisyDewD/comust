@@ -247,18 +247,29 @@
   <section id="slider">
     <div class="swiper slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex flex-row-reverse jarallax position-relative"
-          style="background-image: url(images/banner-img1.png); background-size: cover; background-repeat: no-repeat; background-position: center; height: 90vh;">
-          <div class="banner-content d-flex flex-column justify-content-between align-items-end mb-6 m-auto"
-            data-aos="zoom-effect" style="margin-right: 0;">
-            <h2 class="display-4 fw-bold align-items-end text-right text-end" style="word-wrap: break-word;">
-              ¡Incorpórate en<br>nuestro corazón!</h2>
-            <a href="#form" class="btn btn-primary mt-3">Inscribirme</a>
+        <!-- Imagen para dispositivos de escritorio -->
+        <div class="swiper-slide d-none d-lg-flex flex-row-reverse jarallax position-relative" style="background-image: url(images/banner-img1.png); background-size: cover; background-repeat: no-repeat; background-position: center; height: 90vh;">
+          <div class="banner-content d-flex flex-column justify-content-center align-items-end mb-6 m-auto" data-aos="zoom-effect" style="margin-right: 0;">
+              <h2 class="display-4 fw-bold text-right" style="word-wrap: break-word;">
+                  ¡Incorpórate en<br>nuestro corazón!</h2>
+              <a href="#form" class="btn btn-primary mt-3 align-self-end">Inscribirme</a>
           </div>
+      </div>
+  
+        <!-- Imagen para dispositivos móviles -->
+        <div class="swiper-slide d-block d-lg-none d-xl-none align-items-center jarallax position-relative"
+        style="background-image: url(images/banner-img3.png); background-size: cover; background-repeat: no-repeat; background-position: center; height: 90vh;">
+        <div class="banner-content d-flex flex-column justify-content-center align-items-center mb-6 m-auto"
+            data-aos="zoom-effect" style="margin-right: 0;">
+            <h2 class="display-4 fw-bold text-center mt-4" style="word-wrap: break-word;">
+                ¡Incorpórate en<br>nuestro corazón!</h2>
+            <a href="#form" class="btn btn-primary mt-3">Inscribirme</a>
         </div>
+    </div>
       </div>
     </div>
   </section>
+  
 
   <section id="event">
     <div class="container-lg padding-small">
@@ -275,7 +286,9 @@
 
         <div class="col-md-6 mt-2 mt-md-0">
           <div class="section-title">
-            <h2 class="display-4 fw-normal text-capitalize">Evento CO-MUST 2024: Encuentro sensorial</h2>
+            <h1 class="display-4 fw-normal text-capitalize">Evento CO-MUST IV:</h1>
+            <h2 class="display-4 fw-normal text-capitalize text-primary">Encuentro sensorial</h2>
+
           </div>
           <p>¡Te invitamos a unirte a nosotros en un evento único que celebra la convergencia entre el arte, la
             bioingeniería facial y la belleza! CO-MUST 2024 es más que un evento; es una experiencia inmersiva diseñada
@@ -474,16 +487,13 @@
     </div>
 </section>
 
-
-
-
 <section id="game" class="game jarallax">
   <div class="container-lg padding-small">
       <div class="section-title text-center mb-5">
           <h2 class="display-4 fw-normal">Juego de pares</h2>
           <p class="">¡Prepárate para desafiar tu memoria y <strong>ganar maravillosos descuentos</strong>!<br> ¡Cada acierto te acerca más a descubrir el descuento especial que hemos preparado para ti! ¿Estás listo para poner a prueba tu concentración y agilidad mental? ¡Haz clic en las cartas y comienza la diversión ahora mismo!</p>
       </div>
-      <div id="game-container" class="game-container"></div>
+      <div id="game-container" class="game-container "></div>
       <div id="codigo-descuento"></div>
       <div class="text-center">
           <button onclick="reiniciarJuego()" class="btn btn-primary mt-5">Reiniciar juego</button>
@@ -748,7 +758,6 @@ style="background-image: url(images/banner-img2.png); background-repeat: no-repe
           </div>
       </div>
 </section>
-
 
   <section id="products">
     <div class="container-lg padding-small">

@@ -144,6 +144,14 @@ a:hover {
 .padding-small {
   padding-top: 4em;
   padding-bottom: 2em;
+  padding: 2em 2m;
+}
+
+@media (max-width: 768px){
+  .padding-small {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 }
 
 .padding-medium {
@@ -380,13 +388,16 @@ svg.primary-color-500 {
   background: var(--accent-color);
   opacity: 1;
 }
+
 @media (max-width: 768px) { 
   .swiper-wrapper {
     height: 60vh; width: 50vh;
-    background-position: center;
+    background-position: right;
+    
    
   }
 }
+
 
 /* -Zoom Effect
 ------------------------------------------*/

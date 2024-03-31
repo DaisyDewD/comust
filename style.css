@@ -399,6 +399,10 @@ svg.primary-color-500 {
    
   }
 }
+#test-mobile {
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* -Zoom Effect

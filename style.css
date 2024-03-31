@@ -238,6 +238,8 @@ h6 {
   --bs-btn-disabled-bg: var(--accent-color);
   --bs-btn-disabled-border-color: var(--accent-color);
 }
+
+
 .btn-secondary {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--accent-color);
